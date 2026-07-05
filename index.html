@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Азамат Ваниев — Достаточно смелые решения</title>
+  <meta name="description" content="Мобильные приложения, Telegram-боты, сайты и AI-боты для бизнеса. Азамат Ваниев — Достаточно смелые решения.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .badge {
+      border: 1.5px solid rgba(0, 212, 255, 1) !important;
+      background: rgba(0, 212, 255, 1) !important;
+    }
+    .more-card {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .more-badge {
+      align-self: flex-start !important;
+    }
+    @media (max-width: 820px) {
+      .github-card {
+        justify-content: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: clamp(24px, 5vw, 40px) !important;
+        overflow: hidden !important;
+      }
+      .github-preview {
+        width: 100% !important;
+        max-width: 320px !important;
+        overflow: hidden !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        min-width: 0 !important;
+      }
+      .github-arrow { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- scroll progress -->
+  <div class="progress" id="progress"></div>
+
+  <!-- cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- starfield -->
+  <canvas id="stars"></canvas>
+
+  <!-- quantum computer 3D -->
+  <canvas id="quantum"></canvas>
+
+  <!-- ambient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">AZAMAT<b>.VANIEV</b></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#skills">Чем смогу помочь</a>
+        <a href="#path">Путь</a>
+        <a href="#more">Еще</a>
+        <a href="#channel">Канал</a>
+      </nav>
+      <a href="https://github.com/vaniev1" target="_blank" rel="noopener" class="btn btn-small btn-ghost nav-github">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="badge reveal">
+        <span class="badge-pulse"></span>
+        ДОСТАТОЧНО СМЕЛЫЕ РЕШЕНИЯ
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="line">Азамат</span>
+        <span class="line grad">Ваниев</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Делаю продукты, которые залетают в топы: мобильные приложения,
+        Telegram-боты, сайты и AI-боты для бизнеса.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#path" class="btn btn-primary btn-big">Смотреть путь <span class="arr">→</span></a>
+        <a href="#skills" class="btn btn-ghost btn-big">Чем смогу помочь</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <div class="stat-num" data-count="1000" data-suffix="+">0</div>
+          <div class="stat-label">пользователей бота</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <div class="stat-num" data-count="200" data-prefix="топ-">0</div>
+          <div class="stat-label">соцсетей App Store</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <div class="stat-num" data-count="42">0</div>
+          <div class="stat-label">страны скачиваний</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <div class="stat-num" data-count="5" data-suffix="+">0</div>
+          <div class="stat-label">запущенных проектов</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>МОБИЛЬНАЯ РАЗРАБОТКА ✦ TELEGRAM-БОТЫ ✦ САЙТЫ ✦ AI-БОТЫ ✦ APP STORE ✦ GOOGLE PLAY ✦ АВТОМАТИЗАЦИЯ ✦&nbsp;</span>
+      <span aria-hidden="true">МОБИЛЬНАЯ РАЗРАБОТКА ✦ TELEGRAM-БОТЫ ✦ САЙТЫ ✦ AI-БОТЫ ✦ APP STORE ✦ GOOGLE PLAY ✦ АВТОМАТИЗАЦИЯ ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <div class="section-tag">// 01 — АРСЕНАЛ</div>
+      <h2 class="section-title">Чем смогу <span class="grad">помочь</span></h2>
+      <p class="section-sub">Пять направлений — один результат: продукт, который работает на вас.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card tilt reveal">
+        <div class="card-icon i-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><line x1="10.5" y1="18.3" x2="13.5" y2="18.3"/></svg>
+        </div>
+        <span class="card-num">01</span>
+        <h3>Мобильная разработка</h3>
+        <p>Приложения для iOS и Android — от идеи до публикации и топов App Store. Одно из моих вышло в топ-200 соцсетей.</p>
+        <div class="tags"><span>iOS</span><span>Android</span><span>App Store</span></div>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-icon i-violet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+        </div>
+        <span class="card-num">02</span>
+        <h3>Telegram-боты</h3>
+        <p>Боты, которые продают, принимают оплаты и автоматизируют рутину. Мой бот собрал 1000+ живых пользователей.</p>
+        <div class="tags"><span>Bot API</span><span>Mini Apps</span><span>Платежи</span></div>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-icon i-cyan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><ellipse cx="12" cy="12" rx="4.2" ry="9.5"/><line x1="2.5" y1="12" x2="21.5" y2="12"/></svg>
+        </div>
+        <span class="card-num">03</span>
+        <h3>Сайты</h3>
+        <p>Лендинги, визитки и веб-сервисы. Быстрые, адаптивные, с дизайном.</p>
+        <div class="tags"><span>Лендинги</span><span>Web-app</span><span>SEO</span></div>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-icon i-pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.9 5.8L20 9.7l-5 3.9 1.7 6.1L12 16.4l-4.7 3.3L9 13.6 4 9.7l6.1-1.9L12 2z"/></svg>
+        </div>
+        <span class="card-num">04</span>
+        <h3>AI-боты для бизнеса</h3>
+        <p>Внедряю нейросети туда, где они реально экономят деньги: ассистенты, поддержка, контент. Для бизнеса — и для себя.</p>
+        <div class="tags"><span>GPT / Claude</span><span>Ассистенты</span><span>Автоматизация</span></div>
+      </article>
+
+      <article class="card tilt reveal">
+        <div class="card-icon i-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m16.7-7.7l-4.2 4.2m-4.2 4.2l-4.2 4.2m12.7 0l-4.2-4.2m-4.2-4.2L3.3 4.3"/></svg>
+        </div>
+        <span class="card-num">05</span>
+        <h3>Автоматизация бизнес-процессов</h3>
+        <p>Настраиваю автоматизацию рутинных задач: интеграции, CRM, обработка данных. Экономлю время и снижаю ошибки.</p>
+        <div class="tags"><span>Интеграции</span><span>CRM</span><span>API</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PATH ================= -->
+  <section class="section" id="path">
+    <div class="section-head reveal">
+      <div class="section-tag">// 02 — БОРТОВОЙ ЖУРНАЛ</div>
+      <h2 class="section-title">Путь и <span class="grad">проекты</span></h2>
+      <p class="section-sub">От игровых серверов до приложений в топах App Store.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card tilt">
+          <div class="tl-tag">LVL 01 // СТАРТ</div>
+          <h3>Сервер Minecraft</h3>
+          <p>Первый проект: собрал, запустил и раскачал собственный игровой сервер. Первое комьюнити, первый опыт управления проектом.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card tilt">
+          <div class="tl-tag">LVL 02</div>
+          <h3>Сервер MTA</h3>
+          <p>Multi Theft Auto: масштабнее и сложнее. Своя экономика, скрипты, команда — сервер как полноценный продукт.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card tilt">
+          <div class="tl-tag">LVL 03</div>
+          <h3>Telegram-бот</h3>
+          <p>Первый серьёзный digital-продукт, который набрал аудиторию и доказал: могу делать то, чем пользуются люди.</p>
+          <div class="tl-badge">1000+ пользователей</div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot dot-hot"></div>
+        <div class="tl-card tilt card-hot">
+          <div class="tl-tag">LVL 04 // ПРОРЫВ</div>
+          <h3>Мобильное приложение</h3>
+          <p>Соцсеть, которая вышла в топ-200 лучших соцсетей по версии App Store. Пользователи качали её в 42 странах мира.</p>
+          <div class="tl-badges">
+            <div class="tl-badge hot">Топ-200 App Store</div>
+            <div class="tl-badge">42 страны</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card tilt">
+          <div class="tl-tag">LVL 05</div>
+          <h3>Ещё одно мобильное приложение</h3>
+          <p>Закрепил результат: второй мобильный продукт со своей живой аудиторией.</p>
+          <div class="tl-badge">600+ пользователей</div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot dot-next"></div>
+        <div class="tl-card tl-next">
+          <div class="tl-tag">LVL ?? // ДАЛЬШЕ</div>
+          <h3>Ваш проект</h3>
+          <p>Следующая строчка в этом журнале может быть про ваш продукт.</p>
+          <a href="https://t.me/qwark999" target="_blank" rel="noopener" class="btn btn-primary">Обсудить идею <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MORE ================= -->
+  <section class="section" id="more">
+    <div class="section-head reveal">
+      <div class="section-tag">// 03 — РАЗВИТИЕ</div>
+      <h2 class="section-title">Еще <span class="grad">обо мне</span></h2>
+      <p class="section-sub">Постоянно учусь и развиваюсь в сфере IT и AI.</p>
+    </div>
+
+    <div class="more-grid">
+      <div class="more-card reveal">
+        <div class="more-body">
+          <div class="more-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3>Гарвардский курс по ИИ</h3>
+          <p>Прошел курс от Harvard University по Introduction to Artificial Intelligence with Python.</p>
+        </div>
+        <div class="more-badge">✓ Завершено</div>
+      </div>
+
+      <div class="more-card reveal">
+        <div class="more-body">
+          <div class="more-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Научная работа #1</h3>
+          <p>Тема: "Исследование эффективности мультиагентных архитектур на базе локальных языковых моделей".</p>
+        </div>
+        <div class="more-badge progress">⏳ В процессе</div>
+      </div>
+
+      <div class="more-card reveal">
+        <div class="more-body">
+          <div class="more-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Научная работа #2</h3>
+          <p>Рассмотрим возможности однобитных ИИ моделей</p>
+        </div>
+        <div class="more-badge progress">⏳ В процессе</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GITHUB ================= -->
+  <section class="section" id="github">
+    <div class="github-card reveal">
+      <div class="github-glow"></div>
+      <div class="github-info">
+        <div class="section-tag">// 04 — OPEN SOURCE</div>
+        <h2 class="section-title">Мой <span class="grad">GitHub</span></h2>
+        <p class="section-sub">
+          Все мои проекты, эксперименты и код в открытом доступе.
+          Заглядывай — там всё самое интересное.
+        </p>
+        <a href="https://github.com/vaniev1" target="_blank" rel="noopener" class="btn btn-primary btn-big">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          Перейти на GitHub — @vaniev1
+        </a>
+      </div>
+      <a class="github-preview tilt" href="https://github.com/vaniev1" target="_blank" rel="noopener">
+        <div class="github-avatar">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </div>
+        <div class="github-meta">
+          <div class="github-name">vaniev1</div>
+          <div class="github-handle">github.com/vaniev1</div>
+        </div>
+        <div class="github-arrow">→</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CHANNEL ================= -->
+  <section class="section" id="channel">
+    <div class="channel-card reveal">
+      <div class="channel-glow"></div>
+      <div class="channel-info">
+        <div class="section-tag">// 05 — НА СВЯЗИ</div>
+        <h2 class="section-title">Мой Telegram-канал</h2>
+        <p class="section-sub">
+          Пишу про разработку, запуски проектов и путь в IT без цензуры.
+          Залетай — там всё самое живое.
+        </p>
+        <a href="https://t.me/qwark999" target="_blank" rel="noopener" class="btn btn-primary btn-big">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+          Подписаться — @qwark999
+        </a>
+      </div>
+      <a class="channel-preview tilt" href="https://t.me/qwark999" target="_blank" rel="noopener">
+        <img src="assets/channel.jpg" alt="Аватар канала @qwark999" class="channel-avatar">
+        <div class="channel-meta">
+          <div class="channel-name">У999УУ</div>
+          <div class="channel-handle">@qwark999</div>
+        </div>
+        <div class="channel-arrow">→</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 АЗАМАТ ВАНИЕВ — ДОСТАТОЧНО СМЕЛЫЕ РЕШЕНИЯ</span>
+      <div class="footer-links">
+        <a href="https://github.com/vaniev1" target="_blank" rel="noopener" class="footer-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://t.me/qwark999" target="_blank" rel="noopener" class="footer-link">Telegram → @qwark999</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="quantum.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
